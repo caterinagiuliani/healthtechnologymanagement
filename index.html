@@ -72,10 +72,24 @@
       background: #fff;
       text-align: center;
     }
-    .logo-banner img {
-      max-width: 150px;
-      margin: 10px;
-    }
+
+	.day-selector { text-align: center; margin: 20px 0; }
+	.day-selector button {
+	padding: 10px 20px;
+	margin: 5px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	background: #0d1b4c;
+	color: #fff;
+	font-size: 1rem;
+	}
+	.day-selector button.active { background: #572f85; }
+
+	.day-content { display: none; padding: 20px; max-width: 900px; margin: auto; background: white; border-radius: 8px; }
+	table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+	th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+	th { background: #eee; }
   </style>
 </head>
 <body>
@@ -134,130 +148,113 @@
 
   <div class="program-section">
     <div>
-      <h4>Detailed Program</h4>
-      <p>Download the complete course program with all sessions, speakers, and detailed schedules</p>
-      <a href="#">Download Program PDF</a>
-    </div>
-    <div>
       <h4>Join via Teams</h4>
       <p>Click below to participate online</p>
       <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_Zjc1NGRlMmQtMGMzZS00Y2FjLTk5N2EtYWY0N2I4MzIyNmQ3%40thread.v2/0?context=%7b%22Tid%22%3a%22e99647dc-1b08-454a-bf8c-699181b389ab%22%2c%22Oid%22%3a%220b1af7a9-2e84-460e-9510-b0a27e00f4cc%22%7d">Join Teams Meeting</a>
     </div>
   </div>
 
-  <div class="program-section-full">
-<h2>Course Schedule – December 1–5, 2025</h2>
-<div class="program-container">
-<!-- schedule table inserted -->
-<table>
-<thead>
-<tr>
-  <th>Time</th>
-  <th>Monday 1/12<br><small>Introduction to HTM</small></th>
-  <th>Tuesday 2/12<br><small>Procurement / HTA – Ventilation Devices</small></th>
-  <th>Wednesday 3/12<br><small>Inventory & Maintenance – Imaging Devices</small></th>
-  <th>Thursday 4/12<br><small>Maintenance – NICU & Maternity Devices</small></th>
-  <th>Friday 5/12<br><small>Maintenance & Training</small></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td class="time">09:00–09:30</td>
-  <td>Registration & Opening (Severi, Pecchia, Macrelli, Viroli)</td>
-  <td>Procurement Strategies & HTA – Di Maria<br>Mechanical Ventilator (Biorespira IBD) – A. Fabbri</td>
-  <td>Supply Chain Management & Inventory – Amelia</td>
-  <td>Corrective & Preventive Maintenance – V. Ventimiglia (CEN)</td>
-  <td>Right to Repair – C. De Maria</td>
-</tr>
-<tr>
-  <td class="time">09:30–10:00</td>
-  <td>School Overview – Severi</td>
-  <td>Mechanical Ventilator: Biorespira IBD – Alan Fabbri</td>
-  <td>X-ray & CT – Medtech</td>
-  <td>Maternity Equipment: BAMBI – De Gaetano</td>
-  <td>Telemedicine – GHT M. Bartolo (Remote)</td>
-</tr>
-<tr>
-  <td class="time">10:30–11:00</td>
-  <td>Coffee Break</td>
-  <td>Coffee Break</td>
-  <td>Coffee Break</td>
-  <td>Coffee Break</td>
-  <td>Coffee Break</td>
-</tr>
-<tr>
-  <td class="time">11:00–11:30</td>
-  <td>Lifecycle of Medical Devices – Garagnani</td>
-  <td>Oxygen Alliance</td>
-  <td>Tester Workshop (45 min) – Service 1</td>
-  <td>HTM in Emergency (NGO)</td>
-  <td>Additional Speakers (Tabarrini, Trincone)</td>
-</tr>
-<tr>
-  <td class="time">11:30–12:00</td>
-  <td>Role of Clinical Engineers – Garagnani</td>
-  <td>Oxygen Concentrator</td>
-  <td></td>
-  <td>Ultrasound – S. Scarlata (Remote)</td>
-  <td></td>
-</tr>
-<tr>
-  <td class="time">12:00–12:30</td>
-  <td>HTM Bufalini – Sanniti</td>
-  <td>Participants’ Pitches (5)</td>
-  <td>Participants’ Pitches (5)</td>
-  <td>Phototherapy & Infant Incubators – COBAMS</td>
-  <td>Participants’ Pitches (5)</td>
-</tr>
-<tr>
-  <td class="time">13:00–14:00</td>
-  <td>Lunch</td>
-  <td>Lunch</td>
-  <td>Lunch</td>
-  <td>Lunch</td>
-  <td>Lunch</td>
-</tr>
-<tr>
-  <td class="time">14:00–15:00</td>
-  <td>Bufalini: Clinical Engineering & 3D Printing Lab</td>
-  <td>Participants’ Pitches (5)</td>
-  <td rowspan="2">Workshop 3 – Company Visit (Service 1 – IBD)</td>
-  <td>Workshop 4 – Maintenance Lab (ITS Bergamo – LIB)</td>
-  <td>Software Interoperability – C. Valentini</td>
-</tr>
-<tr>
-  <td class="time">15:00–15:30</td>
-  <td>Bufalini: Department Visits (ICU, Endoscopy, Dialysis, Burns, Radiology)</td>
-  <td>Workshop 2 – Oxygen Alliance</td>
-  <td>Participants’ Pitches (5)</td>
-  <td></td>
-</tr>
-<tr>
-  <td class="time">16:00–16:30</td>
-  <td>Free Break</td>
-  <td>Free Break</td>
-  <td>Free Break</td>
-  <td>Free Break</td>
-  <td>Free Break</td>
-</tr>
-<tr>
-  <td class="time">16:30–17:00</td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td>Global Health – Stefanini</td>
-</tr>
-<tr>
-  <td class="time">17:30–18:00</td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td>Closing & Awards</td>
-</tr>
-</tbody>
-</table>
+<div class="program-section-full">
+<header>
+  <h1>Course Schedule – December 1–5, 2025</h1>
+  <p>Select a day to view the detailed program.</p>
+</header>
+
+<div class="day-selector">
+  <button onclick="showDay('day1')">Monday 1/12</button>
+  <button onclick="showDay('day2')">Tuesday 2/12</button>
+  <button onclick="showDay('day3')">Wednesday 3/12</button>
+  <button onclick="showDay('day4')">Thursday 4/12</button>
+  <button onclick="showDay('day5')">Friday 5/12</button>
+</div>
+
+<!-- DAY 1 -->
+<div id="day1" class="day-content">
+  <h2>Monday 1/12 – Introduction to HTM</h2>
+  <table>
+    <tr><th>Time</th><th>Activity</th><th>Speaker</th><th>Room</th></tr>
+    <tr><td>09:00–09:30</td><td>Registration & Opening (Severi, Pecchia, Macrelli, Viroli)</td><td>Severi, Pecchia, Macrelli, Viroli</td><td></td></tr>
+    <tr><td>09:30–10:00</td><td>School Overview – Severi</td><td>Severi</td><td></td></tr>
+    <tr><td>10:30–11:00</td><td>Coffee Break</td><td></td><td></td></tr>
+    <tr><td>11:00–11:30</td><td>Lifecycle of Medical Devices – Garagnani</td><td>Garagnani</td><td></td></tr>
+    <tr><td>11:30–12:00</td><td>Role of Clinical Engineers – Garagnani</td><td>Garagnani</td><td></td></tr>
+    <tr><td>12:00–12:30</td><td>HTM Bufalini – Sanniti</td><td>Sanniti</td><td></td></tr>
+    <tr><td>13:00–14:00</td><td>Lunch</td><td></td><td></td></tr>
+    <tr><td>14:00–15:00</td><td>Bufalini: Clinical Engineering & 3D Printing Lab</td><td></td><td></td></tr>
+    <tr><td>15:00–15:30</td><td>Bufalini Department Visits</td><td></td><td></td></tr>
+    <tr><td>16:00–16:30</td><td>Free Break</td><td></td><td></td></tr>
+  </table>
+</div>
+
+<!-- DAY 2 -->
+<div id="day2" class="day-content">
+  <h2>Tuesday 2/12 – Procurement / HTA – Ventilation Devices</h2>
+  <table>
+    <tr><th>Time</th><th>Activity</th><th>Speaker</th><th>Room</th></tr>
+    <tr><td>09:00–09:30</td><td>Procurement Strategies & HTA – Di Maria<br>Mechanical Ventilator – A. Fabbri</td><td>Di Maria, A. Fabbri</td><td></td></tr>
+    <tr><td>09:30–10:00</td><td>Mechanical Ventilator: Biorespira IBD – A. Fabbri</td><td>A. Fabbri</td><td></td></tr>
+    <tr><td>10:30–11:00</td><td>Coffee Break</td><td></td><td></td></tr>
+    <tr><td>11:00–11:30</td><td>Oxygen Alliance</td><td></td><td></td></tr>
+    <tr><td>11:30–12:00</td><td>Oxygen Concentrator</td><td></td><td></td></tr>
+    <tr><td>12:00–12:30</td><td>Participants’ Pitches (5)</td><td></td><td></td></tr>
+    <tr><td>13:00–14:00</td><td>Lunch</td><td></td><td></td></tr>
+    <tr><td>14:00–15:00</td><td>Participants’ Pitches (5)</td><td></td><td></td></tr>
+    <tr><td>15:00–15:30</td><td>Workshop 2 – Oxygen Alliance</td><td></td><td></td></tr>
+    <tr><td>16:00–16:30</td><td>Free Break</td><td></td><td></td></tr>
+  </table>
+</div>
+
+<!-- DAY 3 -->
+<div id="day3" class="day-content">
+  <h2>Wednesday 3/12 – Inventory & Maintenance – Imaging Devices</h2>
+  <table>
+    <tr><th>Time</th><th>Activity</th><th>Speaker</th><th>Room</th></tr>
+    <tr><td>09:00–09:30</td><td>Supply Chain Management & Inventory – Amelia</td><td>Amelia</td><td></td></tr>
+    <tr><td>09:30–10:00</td><td>X-ray & CT – Medtech</td><td>Medtech</td><td></td></tr>
+    <tr><td>10:30–11:00</td><td>Coffee Break</td><td></td><td></td></tr>
+    <tr><td>11:00–11:30</td><td>Tester Workshop (45 min) – Service 1</td><td>Service 1</td><td></td></tr>
+    <tr><td>11:30–12:00</td><td></td><td></td><td></td></tr>
+    <tr><td>12:00–12:30</td><td>Participants’ Pitches (5)</td><td></td><td></td></tr>
+    <tr><td>13:00–14:00</td><td>Lunch</td><td></td><td></td></tr>
+    <tr><td>14:00–15:30</td><td>Workshop 3 – Company Visit (Service 1 – IBD)</td><td></td><td></td></tr>
+    <tr><td>16:00–16:30</td><td>Free Break</td><td></td><td></td></tr>
+  </table>
+</div>
+
+<!-- DAY 4 -->
+<div id="day4" class="day-content">
+  <h2>Thursday 4/12 – Maintenance – NICU & Maternity Devices</h2>
+  <table>
+    <tr><th>Time</th><th>Activity</th><th>Speaker</th><th>Room</th></tr>
+    <tr><td>09:00–09:30</td><td>Corrective & Preventive Maintenance – Ventimiglia (CEN)</td><td>Ventimiglia (CEN)</td><td></td></tr>
+    <tr><td>09:30–10:00</td><td>Maternity Equipment: BAMBI – De Gaetano</td><td>De Gaetano</td><td></td></tr>
+    <tr><td>10:30–11:00</td><td>Coffee Break</td><td></td><td></td></tr>
+    <tr><td>11:00–11:30</td><td>HTM in Emergency (NGO)</td><td></td><td></td></tr>
+    <tr><td>11:30–12:00</td><td>Ultrasound – S. Scarlata (Remote)</td><td>S. Scarlata (Remote)</td><td></td></tr>
+    <tr><td>12:00–12:30</td><td>Phototherapy & Infant Incubators – COBAMS</td><td>COBAMS</td><td></td></tr>
+    <tr><td>13:00–14:00</td><td>Lunch</td><td></td><td></td></tr>
+    <tr><td>14:00–15:00</td><td>Workshop 4 – Maintenance Lab (ITS Bergamo – LIB)</td><td></td><td></td></tr>
+    <tr><td>15:00–15:30</td><td>Participants’ Pitches (5)</td><td></td><td></td></tr>
+    <tr><td>16:00–16:30</td><td>Free Break</td><td></td><td></td></tr>
+  </table>
+</div>
+
+<!-- DAY 5 -->
+<div id="day5" class="day-content">
+  <h2>Friday 5/12 – Maintenance & Training</h2>
+  <table>
+    <tr><th>Time</th><th>Activity</th><th>Speaker</th><th>Room</th></tr>
+    <tr><td>09:00–09:30</td><td>Right to Repair – C. De Maria</td><td>C. De Maria</td><td></td></tr>
+    <tr><td>09:30–10:00</td><td>Telemedicine – GHT M. Bartolo (Remote)</td><td>GHT M. Bartolo (Remote)</td><td></td></tr>
+    <tr><td>10:30–11:00</td><td>Coffee Break</td><td></td><td></td></tr>
+    <tr><td>11:00–11:30</td><td>Additional Speakers (Tabarrini, Trincone)</td><td>Tabarrini, Trincone</td><td></td></tr>
+    <tr><td>11:30–12:00</td><td></td><td></td><td></td></tr>
+    <tr><td>12:00–12:30</td><td>Participants’ Pitches (5)</td><td></td><td></td></tr>
+    <tr><td>13:00–14:00</td><td>Lunch</td><td></td><td></td></tr>
+    <tr><td>14:00–15:00</td><td>Software Interoperability – C. Valentini</td><td>C. Valentini</td><td></td></tr>
+    <tr><td>16:30–17:00</td><td>Global Health – Stefanini</td><td>Stefanini</td><td></td></tr>
+    <tr><td>17:30–18:00</td><td>Closing & Awards</td><td></td><td></td></tr>
+  </table>
 </div>
 </div>
 
@@ -265,4 +262,14 @@
     <img src="banner.jpg" alt="Logo EU" />
   </div>
 </body>
+
+<script>
+function showDay(dayId) {
+  document.querySelectorAll('.day-content').forEach(d => d.style.display = 'none');
+  document.querySelectorAll('.day-selector button').forEach(b => b.classList.remove('active'));
+  document.getElementById(dayId).style.display = 'block';
+  event.target.classList.add('active');
+}
+</script>
+
 </html>
