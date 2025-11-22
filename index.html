@@ -46,6 +46,13 @@
     .section .text {
       max-width: 450px;
     }
+	.full-program-header {
+		padding: 30px 20px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		text-align: center;
+	}
     .program-section {
       background: linear-gradient(135deg, #0d1b4c, #572f85);
       color: white;
@@ -155,10 +162,10 @@
   </div>
 
 <div class="program-section-full">
-<header>
+<div class="full-program-header">
   <h1>Course Schedule – December 1–5, 2025</h1>
   <p>Select a day to view the detailed program.</p>
-</header>
+</div>
 
 <div class="day-selector">
   <button onclick="showDay('day1')">Monday 1/12</button>
@@ -258,8 +265,8 @@
 </div>
 </div>
 
-  <div class="logo-banner">
-    <img src="banner.jpg" alt="Logo EU" />
+  <div class="logo-banner" style="margin-top:3%;">
+    <img src="banner.jpg" alt="Logo EU" style="width:100%;"/>
   </div>
 </body>
 
